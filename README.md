@@ -1,6 +1,6 @@
 # Amazon Graphics Card Project
 
-> Project description
+> Project description: This project is meant to be a clone of a module located on the Amazon.com website under the item description page of a graphics card. The module represented here is a customer reviews module and will suppport multiple features.
 
 ## Related Projects
 
@@ -17,7 +17,7 @@
 
 ## Usage
 
-> Some usage instructions This project is meant to be a clone of a module located on the Amazon.com website under the item description page of a graphics card. The module represented here is a customer reviews module and will suppport multiple features. Ton run this repo you will need to install dependencies and run appropriate scripts.
+> Some usage instructions: To run this repo you will need to install dependencies and run appropriate scripts. The front end uses react.js and the back end is an express server with a mongoDB databse. 
 
 ## Requirements
 
