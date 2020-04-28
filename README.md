@@ -1,4 +1,4 @@
-# Amazo Graphics Card Project
+# Amazon Graphics Card Project
 
 > Project description
 
