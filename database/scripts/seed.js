@@ -5,17 +5,17 @@ const Review = require('../models/reviewsModel.js');
 
 // iterate over obj to create 1000 review models
 const createReviews = () => {
-  for (let i = 0; i < 10; i += 1) {
+  for (let i = 0; i < 1000; i += 1) {
     // create random properties or objects
     const randomFirstName = faker.name.firstName();
     const randomLastName = faker.name.lastName();
     const randomReviewerImage = faker.image.people();
     const randomEmail = faker.internet.email();
-    const randomStarsCount = faker.random.number({max: 5});// change to max 5
+    const randomStarsCount = faker.random.number({ max: 5 });// change to max 5
     const randomTopDescription = faker.lorem.sentence();
     const randomReviewDate = faker.date.past();
     const randomVerifiedPurchase = faker.random.boolean();
-    const randomMidDescription = faker.lorem.paragraph();
+    const randomMidDescription = faker.lorem.paragraphs();
     const randomProductImage = faker.image.technics();
     const randomHelpfulCount = faker.random.number();
 
@@ -31,7 +31,7 @@ const createReviews = () => {
       verifiedPurchase: randomVerifiedPurchase,
       midDescription: randomMidDescription,
       productImage: randomProductImage,
-      helpfulCount: randomHelpfulCount
+      helpfulCount: randomHelpfulCount,
     };
 
     // create new review for each obj
