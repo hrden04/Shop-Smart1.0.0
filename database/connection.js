@@ -3,8 +3,7 @@ const Promise = require('bluebird');
 
 mongoose.Promise = require('bluebird');
 
-mongoose.connect('mongodb://localhost/CRmodule', { useNewUrlParser: true });
-
+mongoose.connect('mongodb://localhost/CRmodule', { useMongoClient: true });
 
 const db = mongoose.connection;//============== what is this >
 
@@ -12,4 +11,10 @@ const db = mongoose.connection;//============== what is this >
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 
 
+// mongoose.connection.on('connected', function() {
+//   console.log(connected("Mongoose default connection is open to ", dbURL));
+// });
+db.on('connected', () => console.log('connected'));
 
+//export db everytime
+module.exports = db;
