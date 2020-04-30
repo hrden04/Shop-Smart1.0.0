@@ -1,14 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
+// import ReactDom from 'react-dom';
 
 // eslint-disable-next-line func-style
-function Review(props) {
-  return
-  <div class="review_card">
-    <div class="row_a">
-      <img></img>
-      <span id="span_a_user_name"></span>
+const Review = (props) => {
+  <div className="review_card">
+    <div className="row_a">
+      <img alt='user_image'></img>
+      <span id="span_a_user_name">Hello from review</span>
     </div>
   </div>
 }
+
+export default Review;
