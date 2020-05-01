@@ -1,11 +1,11 @@
 /* eslint-disable no-irregular-whitespace */
 const faker = require('faker');
-const { Review } = require('../models/reviewsModel.js');
+const { Review, reviewsSchema } = require('../models/reviewsModel.js');
 
 
 // iterate over obj to create 1000 review models
 const createReviews = () => {
-  for (let i = 0; i < 1000; i += 1) {
+  for (let i = 0; i < 10; i += 1) {
     // create random properties or objects
     const randomFirstName = faker.name.firstName();
     const randomLastName = faker.name.lastName();
@@ -17,7 +17,7 @@ const createReviews = () => {
     const randomVerifiedPurchase = faker.random.boolean();
     const randomMidDescription = faker.lorem.paragraphs();
     const randomProductImage = faker.image.technics();
-    const randomHelpfulCount = faker.random.number();
+    const randomHelpfulCount = faker.random.number({ max: 500 });
 
     // create object with random data
     const reviewExample = {
@@ -39,7 +39,7 @@ const createReviews = () => {
     // push to array
     reviewRecord.save((err) => {
       if (err) {
-        console.log('error from db save', err);
+        console.log('error from db save');
         return;
       }
       console.log('saved: ');

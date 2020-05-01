@@ -21,8 +21,8 @@ class App extends React.PureComponent {
 
   getAllReviews() {
     axios.get('/api/products/reviews')
-      .then((response) => console.log('response: '))
-      .catch((err) => console.log('Error: '));
+      .then((response) => console.log('response: ', response))
+      .catch((err) => console.log('Error: ', err));
   }
 
 

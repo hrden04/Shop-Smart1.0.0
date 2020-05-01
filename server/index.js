@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 // import database connection
+const db = require('../database/connection.js');
 
 // method in databse
 const { findDocuments } = require('../database/models/reviewsModel.js');
@@ -17,17 +18,11 @@ app.use(express.static(path.join(__dirname, '/../public')));
 app.get('/api/products/reviews', (req, res) => {
   findDocuments((err, results) => {
     if (err) {
-      res.status(400).json({
-        message: 'Failed to get documents',
-        error: err,
-      });
+      console.log('Error getting documents', err);
     } else {
-      res.status(200).json({
-        message: 'Successfully found reviews',
-        reviews: results,
-      });
+      console.log('Success getting documents');
+      res.send(results);
     }
-    // console.log('sent');
   });
 });
 // listen call

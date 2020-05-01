@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const db = require('../connection.js');
 
 // create schema for reviews
 const reviewsSchema = mongoose.Schema({ // want ids using numbers begining at 1000
@@ -22,18 +23,18 @@ const reviewsSchema = mongoose.Schema({ // want ids using numbers begining at 10
 const Review = mongoose.model('Review', reviewsSchema);
 
 const findDocuments = (callback) => {
+  // console.log(Review);
   // Find all documents
+  // console.log('ran in db');
   Review.find({}, (err, docs) => {
-    console.log('Made it here!');
     if (err) {
-      callback(err);
-      // console.log('Error: ', err);
+      console.log('Error: ', err);
     } else {
-      // console.log('document: ', docs);
+      console.log('document: ');
       callback(null, docs);
     }
   });
 };
 
 // Export function to create "reviews" model class
-module.exports = { Review, findDocuments };
+module.exports = { Review, findDocuments, reviewsSchema };

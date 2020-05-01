@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-// const assert = require('assert');
 
 mongoose.Promise = require('bluebird');
 
