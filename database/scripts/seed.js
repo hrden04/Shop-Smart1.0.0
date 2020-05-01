@@ -1,6 +1,6 @@
 /* eslint-disable no-irregular-whitespace */
 const faker = require('faker');
-const Review = require('../models/reviewsModel.js');
+const { Review } = require('../models/reviewsModel.js');
 
 
 // iterate over obj to create 1000 review models
@@ -42,7 +42,7 @@ const createReviews = () => {
         console.log('error from db save', err);
         return;
       }
-      console.log('saved');
+      console.log('saved: ');
     // saved!
     });
   }
@@ -51,4 +51,4 @@ const createReviews = () => {
 // call this to create 1000 reviews
 const currReviews = createReviews();
 
-module.exports = currReviews;
+module.exports = { currReviews };
