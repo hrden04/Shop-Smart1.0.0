@@ -19,17 +19,21 @@ class App extends React.Component {
 
   getAllReviews() {
     axios.get('/api/products/reviews')
-      .then((response) => console.log('response: ', response))
+      .then((response) => {
+        this.setState({
+          reviews: response.data,
+        });
+      })
       .catch((err) => console.log('Error: ', err));
   }
 
 
   render() {
-    const { reviews } = this.context;
+    //const { reviews } = this.context;
     return (
       <div>
         <h2>hello from in react app</h2>
-        <Review reviews={reviews} />
+        <Review reviews={this.state.reviews} />
       </div>
     );
   }
