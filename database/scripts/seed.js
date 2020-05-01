@@ -1,6 +1,6 @@
 /* eslint-disable no-irregular-whitespace */
 const faker = require('faker');
-const Review = require('../models/reviewsModel.js');
+const { Review, reviewsSchema } = require('../models/reviewsModel.js');
 
 
 // iterate over obj to create 1000 review models
@@ -11,13 +11,13 @@ const createReviews = () => {
     const randomLastName = faker.name.lastName();
     const randomReviewerImage = faker.image.people();
     const randomEmail = faker.internet.email();
-    const randomStarsCount = faker.random.number({max: 5});// change to max 5
+    const randomStarsCount = faker.random.number({ max: 5 });// change to max 5
     const randomTopDescription = faker.lorem.sentence();
     const randomReviewDate = faker.date.past();
     const randomVerifiedPurchase = faker.random.boolean();
-    const randomMidDescription = faker.lorem.paragraph();
+    const randomMidDescription = faker.lorem.paragraphs();
     const randomProductImage = faker.image.technics();
-    const randomHelpfulCount = faker.random.number();
+    const randomHelpfulCount = faker.random.number({ max: 500 });
 
     // create object with random data
     const reviewExample = {
@@ -31,7 +31,7 @@ const createReviews = () => {
       verifiedPurchase: randomVerifiedPurchase,
       midDescription: randomMidDescription,
       productImage: randomProductImage,
-      helpfulCount: randomHelpfulCount
+      helpfulCount: randomHelpfulCount,
     };
 
     // create new review for each obj
@@ -39,10 +39,10 @@ const createReviews = () => {
     // push to array
     reviewRecord.save((err) => {
       if (err) {
-        console.log('error from db save', err);
+        console.log('error from db save');
         return;
       }
-      console.log('saved');
+      console.log('saved: ');
     // saved!
     });
   }
@@ -51,4 +51,4 @@ const createReviews = () => {
 // call this to create 1000 reviews
 const currReviews = createReviews();
 
-module.exports = currReviews;
+module.exports = { currReviews };
