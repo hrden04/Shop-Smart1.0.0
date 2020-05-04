@@ -3,9 +3,12 @@ const faker = require('faker');
 const { Review, reviewsSchema } = require('../models/reviewsModel.js');
 
 
-// iterate over obj to create 1000 review models
+// iterate over obj to create # of review models
 const createReviews = () => {
-  for (let i = 0; i < 10; i += 1) {
+  // product number counter
+  let productCounter = 1000;
+
+  for (let i = 0; i < 100; i += 1) {
     // create random properties or objects
     const randomFirstName = faker.name.firstName();
     const randomLastName = faker.name.lastName();
@@ -31,11 +34,13 @@ const createReviews = () => {
       verifiedPurchase: randomVerifiedPurchase,
       midDescription: randomMidDescription,
       productImage: randomProductImage,
+      productId: productCounter,
       helpfulCount: randomHelpfulCount,
     };
-
     // create new review for each obj
     const reviewRecord = new Review(reviewExample);
+
+    console.log(reviewRecord);
     // push to array
     reviewRecord.save((err) => {
       if (err) {
@@ -45,6 +50,8 @@ const createReviews = () => {
       console.log('saved: ');
     // saved!
     });
+    // add one to product counter
+    productCounter += 1;
   }
 };
 

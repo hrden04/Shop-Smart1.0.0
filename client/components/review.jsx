@@ -3,11 +3,10 @@ import React from 'react';
 import RowA from './RowA.jsx';
 
 // eslint-disable-next-line func-style
-function Review(props) {
-console.log('props in review', props)
+const Review = ({ review }) => {
   return (
     <div className="review_card">
-      <RowA props={props} />
+      <RowA firstName={review.reviewersFirstName} lastName={review.reviewersLastName} userImage={review.reviewersImage} />
       <div className="row_b_stars_topdescrip">
         <img alt="review stars" />
         <span className="a_letter_space" />
@@ -64,6 +63,6 @@ console.log('props in review', props)
       </div>
     </div>
   );
-}
+};
 
 export default Review;
