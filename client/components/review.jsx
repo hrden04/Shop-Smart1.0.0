@@ -1,22 +1,14 @@
 /* eslint-disable max-len */
 import React from 'react';
 import RowA from './RowA.jsx';
+import RowB from './RowB.jsx';
 
 // eslint-disable-next-line func-style
 const Review = ({ review }) => {
   return (
-    <div className="review_card">
+    <div className="review_card" id="table">
       <RowA firstName={review.reviewersFirstName} lastName={review.reviewersLastName} userImage={review.reviewersImage} />
-      <div className="row_b_stars_topdescrip">
-        <img alt="review stars" />
-        <span className="a_letter_space" />
-        <a className="review-title" href="https://www.amazon.com/gp/customer-reviews/R20FQAWDMUM87L/ref=cm_cr_dp_d_rvw_ttl?ie=UTF8&ASIN=B00NNMB3KS">
-          <span>
-            "Great cooling pad that is quiet, well built, sturdy, doesn’t slide around,
-            and cools air effectively!"
-          </span>
-        </a>
-      </div>
+      <RowB stars={review.starsCount} description={review.topDescription} />
       <span className="review_date"> Reviewed in the United States on October 7, 2018 </span>
       <div>
         <span className="item_specs"> item color: black+blue </span>
