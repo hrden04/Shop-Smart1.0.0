@@ -3,8 +3,8 @@ import Review from './Review.jsx';
 
 const ReviewList = ({ reviews }) => {
   return (
-    <div className='review_list'>
-      {reviews.map((review) => (<Review key={review._id} review={review} />))}
+    <div className="review_list">
+      {reviews.map((review) => (<Review key={review.productId} review={review} />))}
     </div>
   );
 };
