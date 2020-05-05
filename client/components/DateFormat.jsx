@@ -1,9 +1,9 @@
 import React from 'react';
 
 function DateFormat({ rawDate }) {
-  console.log(rawDate.slice(3, 7));
+  console.log(rawDate.slice(4, 7));
 
-  if (rawDate.slice(3, 7) === 'Jan') {
+  if (rawDate.slice(4, 7) === 'Jan') {
     const newDate = `January ${rawDate.slice(7, 15)}`;
     return (
       <div>
@@ -12,7 +12,7 @@ function DateFormat({ rawDate }) {
     );
   }
   // feb
-  if (rawDate.slice(3, 7) === 'Feb') {
+  if (rawDate.slice(4, 7) === 'Feb') {
     const newDate = `Febuary ${rawDate.slice(7, 15)}`;
     return (
       <div>
@@ -21,7 +21,7 @@ function DateFormat({ rawDate }) {
     );
   }
   // mar
-  if (rawDate.slice(3, 7) === 'Mar') {
+  if (rawDate.slice(4, 7) === 'Mar') {
     const newDate = `March ${rawDate.slice(7, 15)}`;
     return (
       <div>
@@ -30,7 +30,7 @@ function DateFormat({ rawDate }) {
     );
   }
   // apr
-  if (rawDate.slice(3, 7) === 'Apr') {
+  if (rawDate.slice(4, 7) === 'Apr') {
     const newDate = `April ${rawDate.slice(7, 15)}`;
     return (
       <div>
@@ -39,7 +39,7 @@ function DateFormat({ rawDate }) {
     );
   }
   // may
-  if (rawDate.slice(3, 7) === 'May') {
+  if (rawDate.slice(4, 7) === 'May') {
     const newDate = `May ${rawDate.slice(7, 15)}`;
     return (
       <div>
@@ -48,7 +48,7 @@ function DateFormat({ rawDate }) {
     );
   }
   // jun
-  if (rawDate.slice(3, 7) === 'Jun') {
+  if (rawDate.slice(4, 7) === 'Jun') {
     const newDate = `June ${rawDate.slice(7, 15)}`;
     return (
       <div>
@@ -57,7 +57,7 @@ function DateFormat({ rawDate }) {
     );
   }
   // jul
-  if (rawDate.slice(3, 7) === 'Jul') {
+  if (rawDate.slice(4, 7) === 'Jul') {
     const newDate = `July ${rawDate.slice(7, 15)}`;
     return (
       <div>
@@ -66,7 +66,7 @@ function DateFormat({ rawDate }) {
     );
   }
   // aug
-  if (rawDate.slice(3, 7) === 'Aug') {
+  if (rawDate.slice(4, 7) === 'Aug') {
     const newDate = `August ${rawDate.slice(7, 15)}`;
     return (
       <div>
@@ -75,7 +75,7 @@ function DateFormat({ rawDate }) {
     );
   }
   // sep
-  if (rawDate.slice(3, 7) === 'Sep') {
+  if (rawDate.slice(4, 7) === 'Sep') {
     const newDate = `September ${rawDate.slice(7, 15)}`;
     return (
       <div>
@@ -84,7 +84,7 @@ function DateFormat({ rawDate }) {
     );
   }
   // oct
-  if (rawDate.slice(3, 7) === 'Oct') {
+  if (rawDate.slice(4, 7) === 'Oct') {
     const newDate = `October ${rawDate.slice(7, 15)}`;
     return (
       <div>
@@ -93,7 +93,7 @@ function DateFormat({ rawDate }) {
     );
   }
   // nov
-  if (rawDate.slice(3, 7) === 'Nov') {
+  if (rawDate.slice(4, 7) === 'Nov') {
     const newDate = `November ${rawDate.slice(7, 15)}`;
     return (
       <div>
@@ -102,7 +102,7 @@ function DateFormat({ rawDate }) {
     );
   }
   // dec
-  if (rawDate.slice(3, 7) === 'Dec') {
+  if (rawDate.slice(4, 7) === 'Dec') {
     const newDate = `December ${rawDate.slice(7, 15)}`;
     return (
       <div>
