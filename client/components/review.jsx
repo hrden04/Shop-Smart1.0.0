@@ -2,6 +2,7 @@
 import React from 'react';
 import RowA from './RowA.jsx';
 import RowB from './RowB.jsx';
+import RowC from './RowC.jsx';
 
 // eslint-disable-next-line func-style
 const Review = ({ review }) => {
@@ -9,7 +10,7 @@ const Review = ({ review }) => {
     <div className="review_card" id="table">
       <RowA firstName={review.reviewersFirstName} lastName={review.reviewersLastName} userImage={review.reviewersImage} />
       <RowB stars={review.starsCount} description={review.topDescription} />
-      <span className="review_date"> Reviewed in the United States on October 7, 2018 </span>
+      <RowC date={review.reviewDate} />
       <div>
         <span className="item_specs"> item color: black+blue </span>
         <span className="verified"> verified purchase </span>

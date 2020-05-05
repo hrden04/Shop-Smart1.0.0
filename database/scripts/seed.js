@@ -8,11 +8,11 @@ const createReviews = () => {
   // product number counter
   let productCounter = 1000;
 
-  for (let i = 0; i < 100; i += 1) {
+  for (let i = 0; i < 10; i += 1) {
     // create random properties or objects
     const randomFirstName = faker.name.firstName();
     const randomLastName = faker.name.lastName();
-    const randomReviewerImage = faker.image.people();
+    const randomReviewerImage = faker.image.avatar();
     const randomEmail = faker.internet.email();
     const randomStarsCount = faker.random.number({ max: 5 });// change to max 5
     const randomTopDescription = faker.lorem.sentence();
@@ -40,7 +40,6 @@ const createReviews = () => {
     // create new review for each obj
     const reviewRecord = new Review(reviewExample);
 
-    console.log(reviewRecord);
     // push to array
     reviewRecord.save((err) => {
       if (err) {

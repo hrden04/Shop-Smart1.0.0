@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import ReviewList from './ReviewList.jsx';
+import LeftDiv from './LeftDiv.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -31,8 +32,8 @@ class App extends React.Component {
   render() {
     console.log(this.state);
     return (
-      <div>
-        <h2>hello from in react app</h2>
+      <div className="reviews_section">
+        <LeftDiv />
         <ReviewList reviews={this.state.reviews} />
       </div>
     );

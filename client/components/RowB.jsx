@@ -7,7 +7,7 @@ function RowB({ stars, description }) {
     <div className="row_b">
       <Stars starCount={stars} />
       <div className="top_desc_wrapper">
-          <span className="top_description">{description}</span>
+        <span className="top_description">{description}</span>
       </div>
     </div>
   );
