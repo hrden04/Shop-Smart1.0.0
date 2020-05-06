@@ -1,0 +1,94 @@
+body {
+  font-size: 13px;
+  line-height: 19px;
+  color: #111;
+  font-family: "Amazon Ember",Arial,sans-serif;
+}
+
+.reviews_section {
+  display: flex;
+  flex-direction: row;
+}
+
+.review_list {
+  display: table;
+  max-width: 680px;
+  width: 90.5%;
+}
+.left_div {
+  padding-left: 300px;
+}
+
+.review_card {
+  margin-bottom: 22px;
+}
+
+/* row a starts here */
+.row_a {
+  display: table-row;
+  min-height: 34px;
+  cursor: pointer;
+}
+
+.user_image_wrapper {
+  display: table-cell;
+  width: 43px;
+  padding-right: 9px;
+}
+
+.user_image {
+  height: 34px;
+  width: 34px;
+  border-radius: 34px;
+  border: 2px solid #FFF;
+}
+
+.user_name_wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.user_name {
+  position: relative;
+}
+
+/* row b starts here */
+.row_b {
+  display: table;
+}
+
+.stars_wrapper {
+  width: 80px;
+}
+
+.far.fa-star {
+  color:orange;
+}
+
+.fas.fa-star {
+  color:orange;
+}
+
+.top_desc_wrapper {
+  display: table-cell;
+}
+
+.top_description {
+  font-weight: 700;
+}
+/* row c starts here */
+
+.row_c {
+  display: table-row;
+  color: #555;
+}
+
+.review_date {
+  display: table-cell;
+}
+
+.row_c_date {
+  display: table-cell;
+  padding-left: 4px;
+}
+

@@ -1,112 +1,115 @@
 import React from 'react';
 
 function DateFormat({ rawDate }) {
-  console.log(rawDate.slice(4, 7));
+  const shortMonth = rawDate.slice(4, 7);
+  const dateMinusMonth = rawDate.slice(7, 15);
 
-  if (rawDate.slice(4, 7) === 'Jan') {
-    const newDate = `January ${rawDate.slice(7, 15)}`;
+  if (shortMonth === 'Jan') {
+    const newDate = `January ${dateMinusMonth}`;
     return (
-      <div>
-        <span>{newDate}</span>
+      <div className="row_c_date">
+        <span className="date">
+          {newDate}
+        </span>
       </div>
     );
   }
   // feb
-  if (rawDate.slice(4, 7) === 'Feb') {
-    const newDate = `Febuary ${rawDate.slice(7, 15)}`;
+  if (shortMonth === 'Feb') {
+    const newDate = `Febuary ${dateMinusMonth}`;
     return (
-      <div>
-        <span>{newDate}</span>
+      <div className="row_c_date">
+        <span className="date">{newDate}</span>
       </div>
     );
   }
   // mar
-  if (rawDate.slice(4, 7) === 'Mar') {
-    const newDate = `March ${rawDate.slice(7, 15)}`;
+  if (shortMonth === 'Mar') {
+    const newDate = `March ${dateMinusMonth}`;
     return (
-      <div>
-        <span>{newDate}</span>
+      <div className="row_c_date">
+        <span className="date">{newDate}</span>
       </div>
     );
   }
   // apr
-  if (rawDate.slice(4, 7) === 'Apr') {
-    const newDate = `April ${rawDate.slice(7, 15)}`;
+  if (shortMonth === 'Apr') {
+    const newDate = `April ${dateMinusMonth}`;
     return (
-      <div>
-        <span>{newDate}</span>
+      <div className="row_c_date">
+        <span className="date">{newDate}</span>
       </div>
     );
   }
   // may
-  if (rawDate.slice(4, 7) === 'May') {
-    const newDate = `May ${rawDate.slice(7, 15)}`;
+  if (shortMonth === 'May') {
+    const newDate = `May ${dateMinusMonth}`;
     return (
-      <div>
-        <span>{newDate}</span>
+      <div className="row_c_date">
+        <span className="date">{newDate}</span>
       </div>
     );
   }
   // jun
-  if (rawDate.slice(4, 7) === 'Jun') {
-    const newDate = `June ${rawDate.slice(7, 15)}`;
+  if (shortMonth === 'Jun') {
+    const newDate = `June ${dateMinusMonth}`;
     return (
-      <div>
-        <span>{newDate}</span>
+      <div className="row_c_date">
+        <span className="date">{newDate}</span>
       </div>
     );
   }
   // jul
-  if (rawDate.slice(4, 7) === 'Jul') {
-    const newDate = `July ${rawDate.slice(7, 15)}`;
+  if (shortMonth === 'Jul') {
+    const newDate = `July ${dateMinusMonth}`;
     return (
-      <div>
-        <span>{newDate}</span>
+      <div className="row_c_date">
+        <span className="date">{newDate}</span>
       </div>
     );
   }
   // aug
-  if (rawDate.slice(4, 7) === 'Aug') {
-    const newDate = `August ${rawDate.slice(7, 15)}`;
+  if (shortMonth === 'Aug') {
+    const newDate = `August ${dateMinusMonth}`;
     return (
-      <div>
-        <span>{newDate}</span>
+      <div className="row_c_date">
+        <span className="date">{newDate}</span>
       </div>
     );
   }
   // sep
-  if (rawDate.slice(4, 7) === 'Sep') {
-    const newDate = `September ${rawDate.slice(7, 15)}`;
+  if (shortMonth === 'Sep') {
+    const newDate = `September ${dateMinusMonth}`;
     return (
-      <div>
-        <span>{newDate}</span>
+      <div className="row_c_date">
+        <span className="date">{newDate}</span>
       </div>
     );
   }
   // oct
-  if (rawDate.slice(4, 7) === 'Oct') {
-    const newDate = `October ${rawDate.slice(7, 15)}`;
+  if (shortMonth === 'Oct') {
+    const newDate = `October ${dateMinusMonth}`;
     return (
-      <div>
-        <span>{newDate}</span>
+      <div className="row_c_date">
+        <span className="date">{newDate}</span>
       </div>
     );
   }
   // nov
-  if (rawDate.slice(4, 7) === 'Nov') {
-    const newDate = `November ${rawDate.slice(7, 15)}`;
+  if (shortMonth === 'Nov') {
+    const newDate = `November ${dateMinusMonth}`;
     return (
-      <div>
-        <span>{newDate}</span>
+      <div className="row_c_date">
+        <span className="date">{newDate}</span>
       </div>
     );
   }
   // dec
-  if (rawDate.slice(4, 7) === 'Dec') {
-    const newDate = `December ${rawDate.slice(7, 15)}`;
+  if (shortMonth === 'Dec') {
+    const newDate = `December ${dateMinusMonth}`;
     return (
-      <div>
-        <span>{newDate}</span>
+      <div className="row_c_date">
+        <span className="date">{newDate}</span>
       </div>
     );
   }
