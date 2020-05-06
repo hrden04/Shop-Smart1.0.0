@@ -91,4 +91,15 @@ body {
   display: table-cell;
   padding-left: 4px;
 }
+/* row d starts here */
 
+.row_d {
+  margin-bottom: 6px;
+}
+
+.verified {
+  font-size: 11px;
+  line-height: 1.465;
+  font-weight: 700;
+  color: #c45500;
+}

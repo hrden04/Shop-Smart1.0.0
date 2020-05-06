@@ -3,6 +3,7 @@ import React from 'react';
 import RowA from './RowA.jsx';
 import RowB from './RowB.jsx';
 import RowC from './RowC.jsx';
+import RowD from './RowD.jsx';
 
 // eslint-disable-next-line func-style
 const Review = ({ review }) => {
@@ -11,10 +12,7 @@ const Review = ({ review }) => {
       <RowA firstName={review.reviewersFirstName} lastName={review.reviewersLastName} userImage={review.reviewersImage} />
       <RowB stars={review.starsCount} description={review.topDescription} />
       <RowC date={review.reviewDate} />
-      <div>
-        <span className="item_specs"> item color: black+blue </span>
-        <span className="verified"> verified purchase </span>
-      </div>
+      <RowD verified={review.verifiedPurchase} />
       <div>
         <span className="mid_description_p1">
           My old Targus mat which has served me well has over time become extremely noisy. In researching pads as a replacement, I automatically discarded the higher priced ones with adjustable speeds, glowing LEDs, trendy designs, and whatnots considering my laptop would be covering all that expensive eye candy. My priorities were rather basic: (1) thin & lightweight, (2) cooling performance, and (3) quiet. The HV-F2056 fits the bill and works as advertised:
