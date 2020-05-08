@@ -8,7 +8,7 @@ const createReviews = () => {
   // product number counter
   let productCounter = 1000;
 
-  for (let i = 0; i < 10; i += 1) {
+  for (let i = 0; i < 100; i += 1) {
     // create random properties or objects
     const randomFirstName = faker.name.firstName();
     const randomLastName = faker.name.lastName();

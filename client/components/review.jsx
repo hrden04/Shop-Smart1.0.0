@@ -1,3 +1,4 @@
+/* eslint-disable import/extensions */
 /* eslint-disable max-len */
 import React from 'react';
 
@@ -12,7 +13,7 @@ import RowG from './RowG.jsx';
 import RowH from './RowH.jsx';
 
 // eslint-disable-next-line func-style
-const Review = ({ review }) => {
+function Review({ review }) {
   return (
     <div className="review_card" id="table">
       <RowA firstName={review.reviewersFirstName} lastName={review.reviewersLastName} userImage={review.reviewersImage} />
@@ -25,6 +26,6 @@ const Review = ({ review }) => {
       <RowH />
     </div>
   );
-};
+}
 
 export default Review;
