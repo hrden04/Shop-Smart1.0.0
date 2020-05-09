@@ -5,9 +5,7 @@ function RowH() {
     <div className="row_h">
       <div className="button_wrapper">
         <div className="helpful_button_input" type="button">
-          <span className="inner_button">
-            <span className="button_text a_button">Helpful</span>
-          </span>
+          <span className="button_text a_button">Helpful</span>
         </div>
       </div>
       <div className="divider_span">

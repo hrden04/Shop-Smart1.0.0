@@ -58,6 +58,7 @@ body {
 }
 
 .stars_wrapper {
+  cursor: pointer;
   height: 18.906px;
   margin-right: 5px;
 }
@@ -190,10 +191,17 @@ body {
 
 .top_desc_wrapper {
   display: table-cell;
+  cursor: pointer;
 }
 
 .top_description {
+
   font-weight: 700;
+}
+
+.top_description:hover {
+  color: #c45500!important;
+  text-decoration: underline;
 }
 /* row c starts here */
 
@@ -236,20 +244,23 @@ body {
   padding-bottom: 18px;
 }
 
+
 .review_image {
+  cursor: pointer;
   height: 88px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    display: inline-block;
-    margin-right: 1px;
-    margin-bottom: 4px;
-    width: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 1px;
+  margin-bottom: 4px;
+  width: auto;
 }
 /* row g starts here */
 
 .row_g {
+  color: #767676;
   padding-bottom: 10px;
 }
 
@@ -282,8 +293,8 @@ body {
   background-image: linear-gradient(rgb(247, 248, 250), rgb(231, 233, 236));
   border-style: solid;
   border-width: 1px;
-  cursor: pointer;
   display: inline-block;
+  cursor: pointer;
   padding: 0;
   text-align: center;
   font-family: "Amazon Ember",Arial,sans-serif;
@@ -318,6 +329,21 @@ body {
 }
 
 .comment_button_input {
+  cursor: pointer;
+  padding: 0px;
+  border: transparent;
+  font-family: "Amazon Ember",Arial,sans-serif;
+  font-size: 13px!important;
+  line-height: 19px!important;
+  font-weight: 400!important;
+  color: #555!important;
+}
+.comment_button_input:hover {
+  color: #c45500!important;
+}
+
+.report_button_input {
+  cursor: pointer;
   padding: 0px;
   border: transparent;
   font-family: "Amazon Ember",Arial,sans-serif;
@@ -327,12 +353,6 @@ body {
   color: #555!important;
 }
 
-.report_button_input {
-  padding: 0px;
-  border: transparent;
-  font-family: "Amazon Ember",Arial,sans-serif;
-  font-size: 13px!important;
-  line-height: 19px!important;
-  font-weight: 400!important;
-  color: #555!important;
+.report_button_input:hover {
+  color: #c45500!important;
 }

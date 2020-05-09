@@ -2,6 +2,8 @@
 const faker = require('faker');
 const { Review, reviewsSchema } = require('../models/reviewsModel.js');
 
+// create function to create groups of reviews with same product number using random number.
+// i have 100 product ids that need 1 to 20 reviews
 
 // iterate over obj to create # of review models
 const createReviews = () => {
@@ -12,7 +14,14 @@ const createReviews = () => {
     // create random properties or objects
     const randomFirstName = faker.name.firstName();
     const randomLastName = faker.name.lastName();
-    const randomReviewerImage = faker.image.avatar();
+    // either default amazon image
+    let randomReviewerImage = 'https://images-na.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png';
+    // or new faker image avatar
+    if (i % 2 === 0) {
+      randomReviewerImage = faker.image.avatar();
+    }
+
+
     const randomEmail = faker.internet.email();
     const randomStarsCount = faker.random.number({ max: 5 });// change to max 5
     const randomTopDescription = faker.lorem.sentence();

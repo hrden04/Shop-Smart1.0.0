@@ -28,6 +28,8 @@ class App extends React.Component {
       .catch((err) => console.log('Error: ', err));
   }
 
+  // get # number of reviews
+
 
   render() {
     console.log(this.state);
