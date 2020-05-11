@@ -1,6 +1,5 @@
-/* eslint-disable import/extensions */
-/* eslint-disable max-len */
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // component imports
 import RowA from './RowA.jsx';
@@ -16,7 +15,7 @@ import RowH from './RowH.jsx';
 function Review({ review }) {
   return (
     <div className="review_card" id="table">
-      <RowA firstName={review.reviewersFirstName} lastName={review.reviewersLastName} userImage={review.reviewersImage} />
+      <RowA first={review.reviewersFirstName} last={review.reviewersLastName} userImage={review.reviewersImage} />
       <RowB stars={review.starsCount} description={review.topDescription} />
       <RowC date={review.reviewDate} />
       <RowD verified={review.verifiedPurchase} />
@@ -27,5 +26,22 @@ function Review({ review }) {
     </div>
   );
 }
+
+Review.propTypes = {
+  review: PropTypes.shape({
+    reviewersFirstName: PropTypes.string,
+    reviewersLastName: PropTypes.string,
+    reviewersImage: PropTypes.string,
+    reviewersEmail: PropTypes.string,
+    starsCount: PropTypes.number, // also want to make min max for stars
+    topDescription: PropTypes.string,
+    reviewDate: PropTypes.string,
+    verifiedPurchase: PropTypes.bool,
+    midDescription: PropTypes.string,
+    productImage: PropTypes.string,
+    productId: PropTypes.number,
+    helpfulCount: PropTypes.number,
+  }).isRequired,
+};
 
 export default Review;

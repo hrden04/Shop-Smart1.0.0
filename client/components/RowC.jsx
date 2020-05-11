@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import DateFormat from './DateFormat.jsx';
 
 
@@ -14,6 +15,10 @@ function RowC({ date }) {
     </div>
   );
 }
+
+RowC.propTypes = {
+  date: PropTypes.string.isRequired,
+};
 
 
 export default RowC;

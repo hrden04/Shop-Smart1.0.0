@@ -21,4 +21,8 @@ function DateFormat({ rawDate }) {
   );
 }
 
+DateFormat.propTypes = {
+  rawDate: PropTypes.string.isRequired,
+};
+
 export default DateFormat;

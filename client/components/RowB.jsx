@@ -1,5 +1,5 @@
 import React from 'react';
-// eslint-disable-next-line import/extensions
+import PropTypes from 'prop-types';
 import Stars from './Stars.jsx';
 
 function RowB({ stars, description }) {
@@ -12,5 +12,10 @@ function RowB({ stars, description }) {
     </div>
   );
 }
+
+RowB.propTypes = {
+  stars: PropTypes.number.isRequired,
+  description: PropTypes.string.isRequired,
+};
 
 export default RowB;

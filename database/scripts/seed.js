@@ -7,6 +7,7 @@ const { Review, reviewsSchema } = require('../models/reviewsModel.js');
 
 // iterate over obj to create # of review models
 const createReviews = (num, productNum) => {
+  let idCounter = 1;
   // loop num amount of times to create reviews
   for (let i = 0; i < num; i += 1) {
     // create random properties or objects
@@ -19,7 +20,6 @@ const createReviews = (num, productNum) => {
       randomReviewerImage = faker.image.avatar();
     }
 
-
     const randomEmail = faker.internet.email();
     const randomStarsCount = faker.random.number({ max: 5 });// change to max 5
     const randomTopDescription = faker.lorem.sentence();
@@ -31,6 +31,7 @@ const createReviews = (num, productNum) => {
 
     // create object with random data
     const reviewExample = {
+      reactId: idCounter,
       reviewersFirstName: randomFirstName,
       reviewersLastName: randomLastName,
       reviewersImage: randomReviewerImage,
@@ -56,6 +57,7 @@ const createReviews = (num, productNum) => {
       console.log('saved: ');
     // saved!
     });
+    idCounter += 1;
   }
 };
 

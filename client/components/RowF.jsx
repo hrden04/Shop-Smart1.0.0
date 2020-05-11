@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function RowF({ productImage }) {
   return (
@@ -9,5 +10,9 @@ function RowF({ productImage }) {
     </div>
   );
 }
+
+RowF.propTypes = {
+  productImage: PropTypes.string.isRequired,
+};
 
 export default RowF;

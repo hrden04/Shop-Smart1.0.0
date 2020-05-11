@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function RowA({ firstName, lastName, userImage }) {
-  const userName = firstName.concat(' ', lastName);
+function RowA({ first, last, userImage }) {
+  const userName = first.concat(' ', last);
   return (
     <div className="row_a">
       <div className="user_image_wrapper">
@@ -14,5 +15,10 @@ function RowA({ firstName, lastName, userImage }) {
   );
 }
 
+RowA.propTypes = {
+  first: PropTypes.string.isRequired,
+  last: PropTypes.string.isRequired,
+  userImage: PropTypes.string.isRequired,
+};
 
 export default RowA;
