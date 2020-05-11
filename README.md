@@ -17,7 +17,7 @@
 
 ## Usage
 
-> Some usage instructions: To run this repo you will need to install dependencies and run appropriate scripts. The front end uses react.js and the back end is an express server with a mongoDB databse. 
+> Some usage instructions: To run this repo you will need to install dependencies and run appropriate scripts. The front end uses react.js and the back end is an express server with a mongoDB databse.
 
 ## Requirements
 
@@ -27,6 +27,11 @@ An `nvmrc` file is included if using [nvm](https://github.com/creationix/nvm).
 - etc
 
 ## Development
+
+npm run react-dev for webpack
+npm run server-dev to connect to server and db
+npm seed-dev to seed db
+npm test runs jest
 
 ### Installing Dependencies
 
