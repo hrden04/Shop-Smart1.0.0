@@ -11,10 +11,12 @@ class App extends React.Component {
       reviews: [],
     };
     this.getAllReviews = this.getAllReviews.bind(this);
+    this.getReviewsByProdId = this.getReviewsByProdId.bind(this);
   }
 
   componentDidMount() {
-    this.getAllReviews();
+    this.getReviewsByProdId(1050);
+    // this.getAllReviews();
   }
   // create axios call for data from server
 
@@ -28,7 +30,18 @@ class App extends React.Component {
       .catch((err) => console.log('Error: ', err));
   }
 
-  // get # number of reviews
+  // get reviews by product id
+  getReviewsByProdId(id) {
+    axios.get('/api/products/reviews', {
+      params: { productId: id },
+    })
+      .then((response) => {
+        this.setState({
+          reviews: response.data,
+        });
+      })
+      .catch((err) => console.log('Error: ', err));
+  }
 
 
   render() {

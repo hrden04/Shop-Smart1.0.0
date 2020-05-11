@@ -22,11 +22,11 @@ const reviewsSchema = mongoose.Schema({ // want ids using numbers begining at 10
 // create model for reviews
 const Review = mongoose.model('Review', reviewsSchema);
 
-const findDocuments = (callback) => {
+const findDocuments = (callback, obj) => {
   // console.log(Review);
   // Find all documents
   // console.log('ran in db');
-  Review.find({}, (err, docs) => {
+  Review.find(obj, (err, docs) => {
     if (err) {
       console.log('Error: ', err);
     } else {
