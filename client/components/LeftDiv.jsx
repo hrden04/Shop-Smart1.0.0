@@ -36,9 +36,7 @@ class LeftDiv extends React.Component {
     console.log(this.state);
     return (
       <div className="left_div">
-        <div className="left_wrapper">
-          <h2>Customer reviews</h2>
-        </div>
+        <h2>Customer reviews</h2>
         <div className="left_reviews">
           <ReviewTable reviews={this.state.reviews} />
         </div>
