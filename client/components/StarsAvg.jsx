@@ -5,6 +5,9 @@ function StarsAvg({ average }) {
   return (
     <div className="big_stars_wrapper">
       <i className="b_stars b_stars_0" />
+      <span className="b_stars_text">
+        {average} out of 5
+      </span>
     </div>
   );
   // }

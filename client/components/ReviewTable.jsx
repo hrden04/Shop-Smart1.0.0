@@ -16,6 +16,18 @@ function ReviewTable({ reviews }) {
           <StarsAvg average={starAverage} />
         </span>
       </div>
+      <div className="b_star_rating">
+        <span>
+          {total} customer ratings
+        </span>
+      </div>
+      <div className="reviews_bars">
+        <table>
+          <tbody>
+            <tr> </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }
