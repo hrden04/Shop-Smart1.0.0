@@ -14,7 +14,8 @@ const reviewsSchema = mongoose.Schema({ // want ids using numbers begining at 10
   midDescription: String,
   productImage: String,
   productId: Number,
-  helpfulCount: Number,
+  helpfulCount: { type: Number, min: 0, max: 300 },
+  reviewId: Number,
 });
 
 // want to use virtuals for the urls ===========================>
@@ -22,11 +23,11 @@ const reviewsSchema = mongoose.Schema({ // want ids using numbers begining at 10
 // create model for reviews
 const Review = mongoose.model('Review', reviewsSchema);
 
-const findDocuments = (callback) => {
+const findDocuments = (callback, obj) => {
   // console.log(Review);
   // Find all documents
   // console.log('ran in db');
-  Review.find({}, (err, docs) => {
+  Review.find(obj, (err, docs) => {
     if (err) {
       console.log('Error: ', err);
     } else {

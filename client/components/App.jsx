@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import ReviewList from './ReviewList.jsx';
+import ReviewReport from './ReviewReport.jsx';
 
 class App extends React.Component {
   constructor(props) {
@@ -9,16 +10,20 @@ class App extends React.Component {
     this.state = {
       reviews: [],
     };
-    this.getAllReviews = this.getAllReviews.bind(this);
+    this.getReviewsByProdId = this.getReviewsByProdId.bind(this);
   }
 
   componentDidMount() {
-    this.getAllReviews();
+    this.getReviewsByProdId();
   }
   // create axios call for data from server
 
-  getAllReviews() {
-    axios.get('/api/products/reviews')
+  // get reviews by product id
+
+  getReviewsByProdId() {
+    axios.get('/api/products/reviews', {
+      params: { productId: 1000 },
+    })
       .then((response) => {
         this.setState({
           reviews: response.data,
@@ -29,10 +34,9 @@ class App extends React.Component {
 
 
   render() {
-    console.log(this.state);
     return (
-      <div>
-        <h2>hello from in react app</h2>
+      <div className="reviews_section">
+        <ReviewReport reviews={this.state.reviews} />
         <ReviewList reviews={this.state.reviews} />
       </div>
     );

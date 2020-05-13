@@ -1,0 +1,657 @@
+@font-face {
+  font-family: "Amazon Ember";
+  src: url("//db.onlinewebfonts.com/t/02fcddff61b677f4989d2933d574ca89.eot");
+  src: url("//db.onlinewebfonts.com/t/02fcddff61b677f4989d2933d574ca89.eot?#iefix")
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/02fcddff61b677f4989d2933d574ca89.woff2")
+    format("woff2"), url("//db.onlinewebfonts.com/t/02fcddff61b677f4989d2933d574ca89.woff")
+    format("woff"), url("//db.onlinewebfonts.com/t/02fcddff61b677f4989d2933d574ca89.ttf")
+    format("truetype"), url("//db.onlinewebfonts.com/t/02fcddff61b677f4989d2933d574ca89.svg#Amazon Ember")
+    format("svg");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Amazon Ember";
+  src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot");
+  src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot?#iefix")
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff2")
+    format("woff2"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff")
+    format("woff"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.ttf")
+    format("truetype"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.svg#Amazon Ember")
+    format("svg");
+}
+
+body {
+  font-size: 13px;
+  line-height: 19px;
+  color: #111;
+  font-family: "Amazon Ember",Arial,sans-serif;
+}
+
+hr {
+  margin-bottom: 22px;
+  background-color: transparent;
+  display: block;
+  height: 1px;
+  border-width: 0px;
+  border-top: 1px solid #e7e7e7;
+  line-height: 19px;
+  margin-top: 0px;
+}
+
+.reviews_section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding-right: 18px;
+  padding-bottom: 18px;
+  padding-left: 18px;
+
+}
+
+.review_list {
+  width: 643px;
+  padding-left: 76.5px;
+}
+
+.review_card {
+  margin-bottom: 22px;
+}
+
+/* row a starts here */
+.row_a {
+  display: table-row;
+  margin-bottom: 6px;
+  min-height: 34px;
+  cursor: pointer;
+}
+
+.user_image_wrapper {
+  display: table-cell;
+  padding-right: 9px;
+}
+
+.user_image {
+  height: 30.04px;
+  width: 30.04px;
+  border-radius: 34px;
+  border: 2px solid #FFF;
+}
+
+.user_name_wrapper {
+  display: table-cell;
+  min-height: 34px;
+  vertical-align: middle;
+}
+
+/* row b starts here */
+.row_b {
+  display: table;
+}
+
+.stars_wrapper {
+  cursor: pointer;
+  height: 18.906px;
+  margin-right: 5px;
+}
+
+.stars {
+  background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIIcon-sprite_1x-e9434610f810a3a99b3f0e49c1b938c9d76628b8._V2_.png);
+  background-size: 400px 900px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+  vertical-align: text-top;
+  width: 80px;
+  height: 18px;
+  list-style-type: none;
+  display: inline-block;
+  white-space: normal;
+  letter-spacing: normal;
+}
+.stars_5 {
+  background-position: -4px -368px;
+}
+
+.stars_4 {
+  background-position: -20px -368px;
+}
+
+.stars_3 {
+  background-position: -37px -368px;
+}
+
+.stars_2 {
+  background-position: -52px -368px;
+}
+
+.stars_1 {
+  background-position: -69px -368px;
+}
+
+.stars_0 {
+  background-position: -84px -368px;
+}
+
+.top_desc_wrapper {
+  display: table-cell;
+  cursor: pointer;
+}
+
+.top_description {
+  font-weight: 700;
+}
+
+.top_description:hover {
+  color: #c45500;
+  text-decoration: underline;
+}
+
+/* row c starts here */
+.row_c {
+  display: table-row;
+  color: #555;
+}
+
+.review_date {
+  display: table-cell;
+}
+
+.row_c_date {
+  display: table-cell;
+  padding-left: 4px;
+}
+
+/* row d starts here */
+.row_d {
+  margin-bottom: 6px;
+}
+
+.verified {
+  font-size: 11px;
+  line-height: 1.465;
+  font-weight: 700;
+  color: #c45500;
+}
+
+/* row e starts here */
+.row_e {
+  padding-bottom: 10px;
+}
+
+/* row f starts here */
+.row_f {
+  padding-bottom: 18px;
+}
+
+.review_image {
+  cursor: pointer;
+  height: 88px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 1px;
+  margin-bottom: 4px;
+  width: auto;
+}
+
+/* row g starts here */
+.row_g {
+  color: #767676;
+  padding-bottom: 10px;
+}
+
+.helpful_vote {
+  color: #767676;
+}
+
+/* row h starts here */
+.row_h {
+  display: table-row;
+}
+
+.helpful_button_input {
+  margin-right: 5px;
+  float: left;
+}
+
+.button_wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.a_button {
+  height: 30.98px;
+  width: 99.97px;
+  background: #e7e9ec;
+  border-radius: 3px;
+  border-color: #ADB1B8 #A2A6AC #8D9096;
+  background-image: linear-gradient(rgb(247, 248, 250), rgb(231, 233, 236));
+  border-style: solid;
+  border-width: 1px;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0;
+  text-align: center;
+  font-family: "Amazon Ember",Arial,sans-serif;
+  text-decoration: none!important;
+}
+
+.a_button:hover {
+  border-color: #a2a6ac #979aa1 #82858a;
+  background-image: linear-gradient(rgba(247, 248, 250, .3), rgba(231, 233, 236, .3));
+}
+
+.button_text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.divider_span {
+  display:table-cell;
+  vertical-align: middle;
+}
+
+.text_separator {
+  display:inline-block;
+  margin-top: -2px;
+  margin-left: 8.759px;
+  margin-right: 8.759px;
+  width: 1px;
+  background-color: #ddd;
+  height: 14px;
+  vertical-align: middle;
+  background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIIcon-sprite_1x-e943461…._V2_.png);
+}
+
+.comment_button_input {
+  cursor: pointer;
+  border: transparent;
+  font-family: "Amazon Ember",Arial,sans-serif;
+  font-size: 13px!important;
+  line-height: 19px!important;
+  font-weight: 400!important;
+  color: #555!important;
+}
+.comment_button_input:hover {
+  color: #c45500!important;
+}
+
+.report_button_input {
+  cursor: pointer;
+  padding: 0px;
+  border: transparent;
+  font-family: "Amazon Ember",Arial,sans-serif;
+  font-size: 13px!important;
+  line-height: 19px!important;
+  font-weight: 400!important;
+  color: #555!important;
+}
+
+.report_button_input:hover {
+  color: #c45500!important;
+}
+
+/* left div starts here */
+.left_div {
+  display: table;
+  padding-left: 300px;
+}
+
+.left_reviews {
+  display:table-row;
+  width: 300px;
+
+}
+
+.table_row_1 {
+  padding-top: 6px;
+  width: 300px;
+  margin-left: -300px;
+  float: left;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: table-row;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 1.3;
+  color: #111;
+  font-family: "Amazon Ember",Arial,sans-serif;
+  width: 300px;
+  margin-left: -300px;
+  float: left;
+}
+
+.b_stars_row {
+  margin-bottom: 10px;
+}
+
+.b_stars_text_wrapper {
+  width: 105px;
+}
+
+.b_stars_text {
+  font-family: "Amazon Ember",Arial,sans-serif;
+  font-size: 17px;
+  line-height: 1.255;
+  color: #111!important;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
+.b_stars {
+  background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIIcon-sprite_1x-e9434610f810a3a99b3f0e49c1b938c9d76628b8._V2_.png);
+  background-size: 400px 900px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+  text-align: left;
+  overflow: hidden;
+  position: relative;
+  vertical-align: text-top;
+  width: 95px;
+  height: 21px;
+  margin-right: 1px;
+  top: -2px;
+  list-style-type: none;
+  display: inline-block;
+  white-space: normal;
+  letter-spacing: normal;
+}
+
+.b_stars_0 {
+  background-position: -99px -396px;
+}
+.b_stars_0_5 {
+  background-position: -280px -396px;
+}
+.b_stars_1 {
+  background-position: -80px -396px;
+}
+.b_stars_1_5 {
+  background-position: -261px -396px;
+}
+.b_stars_2 {
+  background-position: -61px -396px;
+}
+.b_stars_2_5 {
+  background-position: -242px -396px;
+}
+.b_stars_3 {
+  background-position: -42px -396px;
+}
+.b_stars_3_5 {
+  background-position: -223px -396px;
+}
+.b_stars_4 {
+  background-position: -23px -396px;
+}
+.b_stars_4_5 {
+  background-position: -203px -396px;
+}
+.b_stars_5 {
+  background-position: -03px -396px;
+}
+
+.b_star_rating {
+  margin-bottom: 18px;
+}
+
+.ratings_number {
+  font-size: 13px;
+  line-height: 19px;
+  color: #555;
+}
+
+.review_prog_bars {
+  display: table-row;
+  width: 280px;
+}
+
+.review_table_body {
+  position: relative;
+  right: 7px;
+}
+
+.graph_row {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  border-spacing: 0px;
+}
+
+.star_bar_5 {
+  padding: 1px 3px;
+  width: 190px;
+  border-radius: 1px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.4), inset 0 0 0 1px rgba(0,0,0,.1);
+  overflow: hidden;
+  background: linear-gradient(to bottom,#eee,#f6f6f6);
+  background-image: linear-gradient(rgb(238, 238, 238), rgb(246, 246, 246));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #f3f3f3;
+  height: 17px;
+}
+
+
+.star_prog_5 {
+  width: 0%;
+  height: 19px;
+  border-radius: 1px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.05);
+  background: linear-gradient(to bottom,#ffce00,#ffa700);
+  background-image: linear-gradient(rgb(255, 206, 0), rgb(255, 167, 0));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #ffce00;
+  position: relative;
+  right: 2px; bottom: 1px;
+  transition: width .5s ease;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.star_prog_4 {
+  width: 0%;
+  height: 19px;
+  border-radius: 1px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.05);
+  background: linear-gradient(to bottom,#ffce00,#ffa700);
+  background-image: linear-gradient(rgb(255, 206, 0), rgb(255, 167, 0));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #ffce00;
+  position: relative;
+  right: 2px; bottom: 1px;
+  transition: width .5s ease;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.star_prog_3 {
+  width: 0%;
+  height: 19px;
+  border-radius: 1px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.05);
+  background: linear-gradient(to bottom,#ffce00,#ffa700);
+  background-image: linear-gradient(rgb(255, 206, 0), rgb(255, 167, 0));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #ffce00;
+  position: relative;
+  right: 2px; bottom: 1px;
+  transition: width .5s ease;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.star_prog_2 {
+  width: 0%;
+  height: 19px;
+  border-radius: 1px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.05);
+  background: linear-gradient(to bottom,#ffce00,#ffa700);
+  background-image: linear-gradient(rgb(255, 206, 0), rgb(255, 167, 0));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #ffce00;
+  position: relative;
+  right: 2px; bottom: 1px;
+  transition: width .5s ease;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.star_prog_1 {
+  width: 0%;
+  height: 19px;
+  border-radius: 1px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.05);
+  background: linear-gradient(to bottom,#ffce00,#ffa700);
+  background-image: linear-gradient(rgb(255, 206, 0), rgb(255, 167, 0));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #ffce00;
+  position: relative;
+  right: 2px; bottom: 1px;
+  transition: width .5s ease;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.star_bar_percent_5 {
+  display: table-cell;
+  padding: 1px 3px;
+  text-align: center;
+  vertical-align: top;
+  width: 39px;
+}
+
+.star_text_wrapper {
+  width: 36px;
+  height: 18.2px;
+  padding-left: 3px;
+}
+
+.star_text {
+  color: #0066c0;
+}
+
+.star_percent_text {
+  font-size: 13px;
+  line-height: 19px;
+  color: #0066c0;
+}
+
+.calc_star_ratings {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.drop_icon {
+  width: 7px;
+  height: 7px;
+  background-position: -366px -86px;
+  position: relative;
+  top: 9px;
+  margin-top: -4px;
+  left: -4px;
+  background-size: 400px 900px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIIcon-sprite_1x-e9434610f810a3a99b3f0e49c1b938c9d76628b8._V2_.png);
+}
+
+.ratings_prompt {
+  cursor: pointer;
+  color: #0066c0;
+}
+
+.short_divider {
+  margin-top: 22px;
+  margin-bottom: 22px;
+  background-color: transparent;
+  display: block;
+  height: 1px;
+  border-width: 0;
+  border-top: 1px solid #e7e7e7;
+  line-height: 19px;
+}
+
+h3 {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.255;
+  padding-bottom: 4px;
+  color: #111;
+}
+
+.share_thoughts {
+  margin-bottom: 18px;
+  width: 100%;
+  font-size: 13px;
+  line-height: 19px;
+  color: #111;
+}
+
+.button_row {
+  width: 300;
+  height: 31;
+}
+
+.review_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}

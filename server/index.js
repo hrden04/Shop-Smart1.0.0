@@ -23,8 +23,10 @@ app.get('/api/products/reviews', (req, res) => {
       console.log('Success getting documents');
       res.send(results);
     }
-  });
+  }, req.query);
 });
+
+
 // listen call
 app.listen(PORT, () => {
   console.log(`server listening on port ${PORT}`);
