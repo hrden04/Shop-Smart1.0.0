@@ -1,17 +1,48 @@
+@font-face {
+  font-family: "Amazon Ember";
+  src: url("//db.onlinewebfonts.com/t/02fcddff61b677f4989d2933d574ca89.eot");
+  src: url("//db.onlinewebfonts.com/t/02fcddff61b677f4989d2933d574ca89.eot?#iefix")
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/02fcddff61b677f4989d2933d574ca89.woff2")
+    format("woff2"), url("//db.onlinewebfonts.com/t/02fcddff61b677f4989d2933d574ca89.woff")
+    format("woff"), url("//db.onlinewebfonts.com/t/02fcddff61b677f4989d2933d574ca89.ttf")
+    format("truetype"), url("//db.onlinewebfonts.com/t/02fcddff61b677f4989d2933d574ca89.svg#Amazon Ember")
+    format("svg");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Amazon Ember";
+  src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot");
+  src: url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.eot?#iefix")
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff2")
+    format("woff2"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.woff")
+    format("woff"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.ttf")
+    format("truetype"), url("//db.onlinewebfonts.com/t/157c6cc36dd65b1b2adc9e7f3329c761.svg#Amazon Ember")
+    format("svg");
+}
+
 body {
   font-size: 13px;
   line-height: 19px;
   color: #111;
   font-family: "Amazon Ember",Arial,sans-serif;
 }
+
 hr {
   margin-bottom: 22px;
+  background-color: transparent;
+  display: block;
+  height: 1px;
+  border-width: 0;
+  border-top: 1px solid #e7e7e7;
+  line-height: 19px;
+  margin-top: 0;
 }
 
 .reviews_section {
   display: flex;
   flex-direction: row;
-  width: 655.20;
+  width: 100%;
   padding-right: 18px;
   padding-bottom: 18px;
   padding-left: 18px;
@@ -215,6 +246,7 @@ hr {
 
 .a_button:hover {
   border-color: #a2a6ac #979aa1 #82858a;
+  background-image: linear-gradient(rgba(247, 248, 250, .3), rgba(231, 233, 236, .));
 }
 
 .button_text {
@@ -279,9 +311,7 @@ hr {
 }
 
 .table_row_1 {
-  display: table-row;
   padding-top: 6px;
-  margin-top: 0!important;
   width: 300px;
   margin-left: -300px;
   float: left;
@@ -289,6 +319,7 @@ hr {
 
 h2 {
   margin-top: 0px;
+  margin-bottom: 0px;
   display: table-row;
   font-weight: bold;
   font-size: 21px;
@@ -299,6 +330,24 @@ h2 {
   margin-left: -300px;
   float: left;
 }
+
+.b_stars_row {
+  margin-bottom: 10px;
+}
+
+.b_stars_text_wrapper {
+  width: 105px;
+}
+
+.b_stars_text {
+  font-family: "Amazon Ember",Arial,sans-serif;
+  font-size: 17px;
+  line-height: 1.255;
+  color: #111!important;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+
 
 .b_stars {
   background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIIcon-sprite_1x-e9434610f810a3a99b3f0e49c1b938c9d76628b8._V2_.png);
@@ -354,4 +403,109 @@ h2 {
 }
 .b_stars_5 {
   background-position: -03px -396px;
+}
+
+.b_star_rating {
+  margin-bottom: 18px;
+}
+
+.ratings_number {
+  font-size: 13px;
+  line-height: 19px;
+  color: #555;
+}
+
+.review_prog_bars {
+  display: table-row;
+  width: 280px;
+  padding-right: 20px;
+}
+
+.star_bar_5 {
+  padding: 1px 3px;
+  width: 190px;
+  border-radius: 1px;
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.4), inset 0 0 0 1px rgba(0,0,0,.1);
+  overflow: hidden;
+  background: linear-gradient(to bottom,#eee,#f6f6f6);
+  background-image: linear-gradient(rgb(238, 238, 238), rgb(246, 246, 246));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #f3f3f3;
+  height: 17px;
+}
+
+
+.star_prog_5 {
+  width: 72%;
+  height: 19px;
+  border-radius: 1px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.05);
+  background: linear-gradient(to bottom,#ffce00,#ffa700);
+  background-image: linear-gradient(rgb(255, 206, 0), rgb(255, 167, 0));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #ffce00;
+  position: relative;
+  right: 2px; bottom: 1px;
+  transition: width .5s ease;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.star_prog_4 {
+  width: 12%;
+  height: 19px;
+  border-radius: 1px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.05);
+  background: linear-gradient(to bottom,#ffce00,#ffa700);
+  background-image: linear-gradient(rgb(255, 206, 0), rgb(255, 167, 0));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #ffce00;
+  position: relative;
+  right: 2px; bottom: 1px;
+  transition: width .5s ease;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.star_bar_percent_5 {
+  display: table-cell;
+  padding: 1px 3px;
+  text-align: right;
+  vertical-align: top;
+  width: 39px;
+}
+
+.star_text_wrapper {
+  width: 36px;
+  height: 18.2px;
+  padding-left: 3px;
+}
+
+.star_text {
+  color: #0066c0;
+}
+
+.star_percent_text {
+  font-size: 13px;
+  line-height: 19px;
+  color: #0066c0;
 }
