@@ -33,7 +33,7 @@ class LeftDiv extends React.Component {
 
 
   render() {
-    //console.log(this.state);
+    console.log(this.state);
     return (
       <div className="left_div">
         <h2>Customer reviews</h2>

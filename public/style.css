@@ -33,10 +33,10 @@ hr {
   background-color: transparent;
   display: block;
   height: 1px;
-  border-width: 0;
+  border-width: 0px;
   border-top: 1px solid #e7e7e7;
   line-height: 19px;
-  margin-top: 0;
+  margin-top: 0px;
 }
 
 .reviews_section {
@@ -246,7 +246,7 @@ hr {
 
 .a_button:hover {
   border-color: #a2a6ac #979aa1 #82858a;
-  background-image: linear-gradient(rgba(247, 248, 250, .3), rgba(231, 233, 236, .));
+  background-image: linear-gradient(rgba(247, 248, 250, .3), rgba(231, 233, 236, .3));
 }
 
 .button_text {
@@ -308,6 +308,7 @@ hr {
 .left_reviews {
   display:table-row;
   width: 300px;
+
 }
 
 .table_row_1 {
@@ -347,7 +348,6 @@ h2 {
   vertical-align: middle;
   padding-left: 10px;
 }
-
 
 .b_stars {
   background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIIcon-sprite_1x-e9434610f810a3a99b3f0e49c1b938c9d76628b8._V2_.png);
@@ -418,7 +418,18 @@ h2 {
 .review_prog_bars {
   display: table-row;
   width: 280px;
-  padding-right: 20px;
+}
+
+.review_table_body {
+  position: relative;
+  right: 7px;
+}
+
+.graph_row {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  border-spacing: 0px;
 }
 
 .star_bar_5 {
@@ -441,7 +452,7 @@ h2 {
 
 
 .star_prog_5 {
-  width: 72%;
+  width: 0%;
   height: 19px;
   border-radius: 1px;
   box-shadow: inset 0 0 0 1px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.05);
@@ -464,7 +475,76 @@ h2 {
 }
 
 .star_prog_4 {
-  width: 12%;
+  width: 0%;
+  height: 19px;
+  border-radius: 1px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.05);
+  background: linear-gradient(to bottom,#ffce00,#ffa700);
+  background-image: linear-gradient(rgb(255, 206, 0), rgb(255, 167, 0));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #ffce00;
+  position: relative;
+  right: 2px; bottom: 1px;
+  transition: width .5s ease;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.star_prog_3 {
+  width: 0%;
+  height: 19px;
+  border-radius: 1px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.05);
+  background: linear-gradient(to bottom,#ffce00,#ffa700);
+  background-image: linear-gradient(rgb(255, 206, 0), rgb(255, 167, 0));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #ffce00;
+  position: relative;
+  right: 2px; bottom: 1px;
+  transition: width .5s ease;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.star_prog_2 {
+  width: 0%;
+  height: 19px;
+  border-radius: 1px;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.05);
+  background: linear-gradient(to bottom,#ffce00,#ffa700);
+  background-image: linear-gradient(rgb(255, 206, 0), rgb(255, 167, 0));
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #ffce00;
+  position: relative;
+  right: 2px; bottom: 1px;
+  transition: width .5s ease;
+  transition-property: width;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+
+.star_prog_1 {
+  width: 0%;
   height: 19px;
   border-radius: 1px;
   box-shadow: inset 0 0 0 1px rgba(0,0,0,.25), inset 0 -1px 0 rgba(0,0,0,.05);
@@ -489,7 +569,7 @@ h2 {
 .star_bar_percent_5 {
   display: table-cell;
   padding: 1px 3px;
-  text-align: right;
+  text-align: center;
   vertical-align: top;
   width: 39px;
 }
