@@ -1,7 +1,7 @@
 /* eslint-disable import/extensions */
 import React from 'react';
 import ReactDom from 'react-dom';
-import App from './components/App.jsx';
+import CustomerReviews from './components/CustomerReviews.jsx';
 
 
-ReactDom.render(<App />, document.getElementById('app'));
+ReactDom.render(<CustomerReviews />, document.getElementById('customer_reviews'));

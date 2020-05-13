@@ -3,7 +3,7 @@ import axios from 'axios';
 import ReviewList from './ReviewList.jsx';
 import ReviewReport from './ReviewReport.jsx';
 
-class App extends React.Component {
+class CustomerReviews extends React.Component {
   constructor(props) {
     super(props);
 
@@ -43,4 +43,4 @@ class App extends React.Component {
   }
 }
 
-export default App;
+export default CustomerReviews;
