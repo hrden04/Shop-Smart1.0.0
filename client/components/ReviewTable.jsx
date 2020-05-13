@@ -153,6 +153,20 @@ function ReviewTable({ reviews }) {
           </tbody>
         </table>
       </div>
+      <div className="calc_star_ratings">
+        <span className="drop_icon" />
+        <span className="ratings_prompt">How does Amazon calculate star ratings?</span>
+      </div>
+      <hr className="short_divider" />
+      <div className="solicitation_div">
+        <h3>Review this product</h3>
+      </div>
+      <div className="share_thoughts">
+        Share your thoughts with other customers
+      </div>
+      <div className="button_row">
+        <span className="review_button a_button">Write a customer review</span>
+      </div>
     </div>
   );
 }

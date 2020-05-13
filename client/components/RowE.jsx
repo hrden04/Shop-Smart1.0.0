@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function RowE({ description }) {
   return (
@@ -11,5 +12,9 @@ function RowE({ description }) {
     </div>
   );
 }
+
+RowE.propTypes = {
+  description: PropTypes.string.isRequired,
+};
 
 export default RowE;

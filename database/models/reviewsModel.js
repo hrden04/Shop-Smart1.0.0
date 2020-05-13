@@ -14,8 +14,8 @@ const reviewsSchema = mongoose.Schema({ // want ids using numbers begining at 10
   midDescription: String,
   productImage: String,
   productId: Number,
-  helpfulCount: Number,
-  reactId: Number,
+  helpfulCount: { type: Number, min: 0, max: 300 },
+  reviewId: Number,
 });
 
 // want to use virtuals for the urls ===========================>

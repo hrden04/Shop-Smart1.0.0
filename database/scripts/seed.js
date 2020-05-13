@@ -31,7 +31,7 @@ const createReviews = (num, productNum) => {
 
     // create object with random data
     const reviewExample = {
-      reactId: idCounter,
+      reviewId: idCounter,
       reviewersFirstName: randomFirstName,
       reviewersLastName: randomLastName,
       reviewersImage: randomReviewerImage,
@@ -68,7 +68,7 @@ const createProducts = () => {
   // loop to 100 to create products with reviews
   for (let i = 0; i < 100; i += 1) {
     // create random number for amount of reviews to create
-    let randomNum = Math.floor(Math.random() * Math.floor(20));
+    const randomNum = Math.floor(Math.random() * Math.floor(20));
     createReviews(randomNum, productCounter);
     productCounter += 1;
   }

@@ -6,7 +6,7 @@ import Review from './Review.jsx';
 function ReviewList({ reviews }) {
   return (
     <div className="review_list">
-      {reviews.map((review) => (<Review key={review.reactId} review={review} />))}
+      {reviews.map((review) => (<Review key={review.reviewId} review={review} />))}
     </div>
   );
 }
