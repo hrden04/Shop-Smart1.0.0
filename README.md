@@ -33,6 +33,8 @@ npm run server-dev to connect to server and db
 npm seed-dev to seed db
 npm test runs jest
 
+docker exec -it agcfecmodulesjoxner_survey_1 npm run seed-dev 
+
 ### Installing Dependencies
 
 From within the root directory:
