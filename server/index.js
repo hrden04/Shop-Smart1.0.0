@@ -6,7 +6,7 @@ const db = require('../database/connection.js');
 // method in databse
 const { findDocuments } = require('../database/models/reviewsModel.js');
 
-const PORT = process.env.PORT || 3030;
+const PORT = process.env.PORT || 80;
 
 const app = express();
 
