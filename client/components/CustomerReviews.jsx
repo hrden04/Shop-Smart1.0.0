@@ -22,7 +22,7 @@ class CustomerReviews extends React.Component {
 
   getReviewsByProdId() {
     axios.get('/api/products/reviews', {
-      params: { productId: 1000 },
+      params: { productId: 1005 },
     })
       .then((response) => {
         this.setState({
@@ -34,6 +34,7 @@ class CustomerReviews extends React.Component {
 
 
   render() {
+    console.log(this.state);
     return (
       <div className="reviews_section">
         <ReviewReport reviews={this.state.reviews} />
