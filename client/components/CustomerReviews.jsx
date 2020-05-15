@@ -22,7 +22,7 @@ class CustomerReviews extends React.Component {
 
   getReviewsByProdId() {
     axios.get('/api/products/reviews', {
-      params: { productId: 1005 },
+      params: { productId: 1000 },
     })
       .then((response) => {
         this.setState({

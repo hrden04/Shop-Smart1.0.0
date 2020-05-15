@@ -24,7 +24,7 @@ function ReviewTable({ reviews }) {
         starCount += 1;
       }
     }
-    const percent = ((numTotal / 100) * starCount) * 100;
+    const percent = Math.floor(((numTotal / 100) * starCount) * 100);
     return percent;
   }
 
