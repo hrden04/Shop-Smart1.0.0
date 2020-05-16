@@ -28,6 +28,10 @@
   font-family: "Amazon Ember",Arial,sans-serif;
 }
 
+#customer_reviews .reviews_wrapper {
+  display: table;
+}
+
 #customer_reviews hr {
   margin-bottom: 22px;
   background-color: transparent;
@@ -39,7 +43,7 @@
   margin-top: 0px;
 }
 
-.reviews_section {
+#customer_reviews .reviews_section {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -49,12 +53,12 @@
 
 }
 
-.review_list {
+#customer_reviews .review_list {
   width: 643px;
   padding-left: 76.5px;
 }
 
-.review_card {
+#customer_reviews .review_card {
   margin-bottom: 22px;
 }
 
@@ -66,7 +70,7 @@
   cursor: pointer;
 }
 
-.user_image_wrapper {
+#customer_reviews .user_image_wrapper {
   display: table-cell;
   padding-right: 9px;
 }
@@ -587,7 +591,7 @@
 }
 
 #customer_reviews .star_text {
-  display: table-row;
+  display: inline;
   cursor: pointer;
   color: #0066c0;
 }

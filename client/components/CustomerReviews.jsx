@@ -34,7 +34,6 @@ class CustomerReviews extends React.Component {
 
 
   render() {
-    console.log(this.state);
     return (
       <div className="reviews_wrapper">
         <hr />
