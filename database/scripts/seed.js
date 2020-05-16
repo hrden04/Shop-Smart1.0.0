@@ -68,7 +68,10 @@ const createProducts = () => {
   // loop to 100 to create products with reviews
   for (let i = 0; i < 100; i += 1) {
     // create random number for amount of reviews to create
-    const randomNum = Math.floor(Math.random() * Math.floor(20));
+    let randomNum = Math.floor(Math.random() * Math.floor(20));
+    if (randomNum === 0) {
+      randomNum = 1;
+    }
     createReviews(randomNum, productCounter);
     productCounter += 1;
   }

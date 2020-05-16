@@ -332,6 +332,10 @@
   float: left;
 }
 
+.big_stars_wrapper {
+  cursor: pointer;
+}
+
 .b_stars_row {
   margin-bottom: 10px;
 }
@@ -448,6 +452,7 @@
   background-clip: initial;
   background-color: #f3f3f3;
   height: 17px;
+  cursor: pointer;
 }
 
 
@@ -572,6 +577,7 @@
   text-align: center;
   vertical-align: top;
   width: 39px;
+  cursor: pointer;
 }
 
 #customer_reviews .star_text_wrapper {
@@ -581,6 +587,7 @@
 }
 
 #customer_reviews .star_text {
+  cursor: pointer;
   color: #0066c0;
 }
 
