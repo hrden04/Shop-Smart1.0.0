@@ -587,7 +587,7 @@
 }
 
 #customer_reviews .star_text {
-  display: table-cell;
+  display: table-row;
   cursor: pointer;
   color: #0066c0;
 }

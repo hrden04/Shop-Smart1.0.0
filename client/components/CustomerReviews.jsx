@@ -36,11 +36,14 @@ class CustomerReviews extends React.Component {
   render() {
     console.log(this.state);
     return (
-      <div className="reviews_section">
+      <div className="reviews_wrapper">
         <hr />
-        <ReviewReport reviews={this.state.reviews} />
-        <ReviewList reviews={this.state.reviews} />
+        <div className="reviews_section">
+          <ReviewReport reviews={this.state.reviews} />
+          <ReviewList reviews={this.state.reviews} />
+        </div>
       </div>
+
     );
   }
 }
