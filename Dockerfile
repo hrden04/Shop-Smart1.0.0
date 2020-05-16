@@ -9,6 +9,8 @@ WORKDIR /src/app
 COPY . /src/app
 # install dependencies
 RUN npm install
+
+RUN npm run build
 # Make port 3000 available to the world outside this container
 EXPOSE 3030
 # Run the app when the container launches
