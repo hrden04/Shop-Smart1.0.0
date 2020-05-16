@@ -591,6 +591,8 @@
 }
 
 #customer_reviews .star_text {
+  line-height: 19px;
+  font-size: 13px;
   display: inline;
   cursor: pointer;
   color: #0066c0;

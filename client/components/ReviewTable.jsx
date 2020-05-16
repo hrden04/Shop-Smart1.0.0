@@ -49,7 +49,6 @@ function ReviewTable({ reviews }) {
               <td>
                 <div className="star_text_wrapper">
                   <span className="star_text">5 star</span>
-                  <span> </span>
                 </div>
               </td>
               <td className="graph_row">
@@ -70,7 +69,6 @@ function ReviewTable({ reviews }) {
               <td>
                 <div className="star_text_wrapper">
                   <span className="star_text">4 star</span>
-                  <span> </span>
                 </div>
               </td>
               <td className="graph_row">
@@ -91,7 +89,6 @@ function ReviewTable({ reviews }) {
               <td>
                 <div className="star_text_wrapper">
                   <span className="star_text">3 star</span>
-                  <span> </span>
                 </div>
               </td>
               <td>
@@ -112,7 +109,6 @@ function ReviewTable({ reviews }) {
               <td>
                 <div className="star_text_wrapper">
                   <span className="star_text">2 star</span>
-                  <span> </span>
                 </div>
               </td>
               <td>
@@ -133,7 +129,6 @@ function ReviewTable({ reviews }) {
               <td>
                 <div className="star_text_wrapper">
                   <span className="star_text">1 star</span>
-                  <span> </span>
                 </div>
               </td>
               <td>
