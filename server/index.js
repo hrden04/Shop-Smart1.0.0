@@ -1,9 +1,9 @@
 const express = require('express');
 const path = require('path');
 // import database connection
-const db = require('../database/connection.js');
+// const db = require('../database/connection.js');
 
-// method in databse
+// method in database
 const { findDocuments } = require('../database/models/reviewsModel.js');
 
 const PORT = process.env.PORT || 3030;

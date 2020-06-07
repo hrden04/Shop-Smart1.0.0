@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Stars from './Stars.jsx';
 
+// second row of review
 function RowB({ stars, description }) {
   return (
     <div className="row_b">

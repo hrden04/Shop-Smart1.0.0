@@ -1,7 +1,9 @@
+/* eslint-disable max-len */
+/* eslint-disable import/extensions */
 import React from 'react';
 import PropTypes from 'prop-types';
 
-// component imports
+// component imports used a lot of components to keep css under control
 import RowA from './RowA.jsx';
 import RowB from './RowB.jsx';
 import RowC from './RowC.jsx';
@@ -11,21 +13,20 @@ import RowF from './RowF.jsx';
 import RowG from './RowG.jsx';
 import RowH from './RowH.jsx';
 
-// eslint-disable-next-line func-style
-function Review({ review }) {
-  return (
-    <div className="review_card" id="table">
-      <RowA first={review.reviewersFirstName} last={review.reviewersLastName} userImage={review.reviewersImage} />
-      <RowB stars={review.starsCount} description={review.topDescription} />
-      <RowC date={review.reviewDate} />
-      <RowD verified={review.verifiedPurchase} />
-      <RowE description={review.midDescription} />
-      <RowF productImage={review.productImage} />
-      <RowG helpfulCount={review.helpfulCount} />
-      <RowH />
-    </div>
-  );
-}
+
+const Review = ({ review }) => (
+  <div className="review_card" id="table">
+    <RowA first={review.reviewersFirstName} last={review.reviewersLastName} userImage={review.reviewersImage} />
+    <RowB stars={review.starsCount} description={review.topDescription} />
+    <RowC date={review.reviewDate} />
+    <RowD verified={review.verifiedPurchase} />
+    <RowE description={review.midDescription} />
+    <RowF productImage={review.productImage} />
+    <RowG helpfulCount={review.helpfulCount} />
+    <RowH />
+  </div>
+);
+
 
 Review.propTypes = {
   review: PropTypes.shape({

@@ -1,5 +1,8 @@
+/* eslint-disable no-restricted-globals */
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 
+// returns average in form of stars image
 function StarsAvg({ average }) {
   if (isNaN(average)) {
     return (

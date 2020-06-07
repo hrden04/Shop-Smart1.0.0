@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import StarsAvg from './StarsAvg.jsx';
 
-
+// module that calcualtes and displays reviews averages
 function ReviewTable({ reviews }) {
   // creates object containing stars count values for reviews
   const starsObj = reviews.map((obj) => {
@@ -24,10 +24,11 @@ function ReviewTable({ reviews }) {
         starCount += 1;
       }
     }
+    // calcualtes percentage of reviews
     const percent = Math.floor(((numTotal / 100) * starCount) * 100);
     return percent;
   }
-
+  // creates reference for progress bars
   const stars5Percent = starsPerc(starsObj, 5, reviews.length);
   const stars4Percent = starsPerc(starsObj, 4, reviews.length);
   const stars3Percent = starsPerc(starsObj, 3, reviews.length);

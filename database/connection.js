@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
-
 mongoose.Promise = require('bluebird');
+
 // in docker
 mongoose.connect('mongodb://database/ReviewsDb', { useMongoClient: true });
+
 // in local dev
 // mongoose.connect('mongodb://localhost/ReviewsDb', { useMongoClient: true });
 

@@ -1,6 +1,7 @@
 import React from 'react';
 
 // creates stars image that reflects reviews stars count
+// uses sprite image thats requested from website
 function Stars({ starCount }) {
   if (starCount === 1) {
     return (

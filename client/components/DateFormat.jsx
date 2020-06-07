@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
+// formats date for display appropriately
 function DateFormat({ rawDate }) {
   const dateToMils = Date.parse(rawDate);
   const d = new Date(dateToMils);

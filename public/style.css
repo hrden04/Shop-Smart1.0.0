@@ -1,3 +1,5 @@
+/* custom fonts and images sprites used in here if your confused */
+
 @font-face {
   font-family: "Amazon Ember";
   src: url("//db.onlinewebfonts.com/t/02fcddff61b677f4989d2933d574ca89.eot");
@@ -356,6 +358,8 @@
   vertical-align: middle;
   padding-left: 10px;
 }
+
+/* image sprite below */
 
 #customer_reviews .b_stars {
   background-image: url(https://m.media-amazon.com/images/G/01/AUIClients/AmazonUIIcon-sprite_1x-e9434610f810a3a99b3f0e49c1b938c9d76628b8._V2_.png);

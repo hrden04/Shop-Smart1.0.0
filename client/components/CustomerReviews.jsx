@@ -3,6 +3,7 @@ import axios from 'axios';
 import ReviewList from './ReviewList.jsx';
 import ReviewReport from './ReviewReport.jsx';
 
+// essentially App but not named app
 class CustomerReviews extends React.Component {
   constructor(props) {
     super(props);
@@ -16,10 +17,9 @@ class CustomerReviews extends React.Component {
   componentDidMount() {
     this.getReviewsByProdId();
   }
+
   // create axios call for data from server
-
   // get reviews by product id
-
   getReviewsByProdId() {
     axios.get('/api/products/reviews', {
       params: { productId: 1000 },
@@ -34,12 +34,14 @@ class CustomerReviews extends React.Component {
 
 
   render() {
+    const { reviews } = this.state;
+
     return (
       <div className="reviews_wrapper">
         <hr />
         <div className="reviews_section">
-          <ReviewReport reviews={this.state.reviews} />
-          <ReviewList reviews={this.state.reviews} />
+          <ReviewReport reviews={reviews} />
+          <ReviewList reviews={reviews} />
         </div>
       </div>
 

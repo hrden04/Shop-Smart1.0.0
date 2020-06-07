@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+// first row of review 
 function RowA({ first, last, userImage }) {
   const userName = first.concat(' ', last);
   return (
