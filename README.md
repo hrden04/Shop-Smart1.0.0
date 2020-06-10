@@ -1,13 +1,12 @@
 # Amazon Graphics Card Project
 
-> Project description: This project is meant to be a clone of a module located on the Amazon.com website under the item description page of a graphics card. The module represented here is a customer reviews module and will suppport multiple features.
+> Project description: This project is meant to be a module located on the Shp Smart website under the item description page. The module represented here is a customer reviews module as well as a reviews average breakdown module they will both suppport multiple features.
 
 ## Related Projects
 
-  - https://github.com/hrden04/agcFecProxyServerJOxner
-  - https://github.com/hrden04/agcFecModulesJOxner
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+  - https://github.com/hrden04/Shop-Smart1.0.0
+  - https://github.com/hrden04/Shop-Smart-Proxy
+
 
 ## Table of Contents
 
@@ -17,7 +16,8 @@
 
 ## Usage
 
-> Some usage instructions: To run this repo you will need to install dependencies and run appropriate scripts. The front end uses react.js and the back end is an express server with a mongoDB database.
+Some usage instructions:
+To run this repo you will need to install dependencies and run appropriate scripts. The front end uses react.js and the back end is an express server with a mongoDB database.
 
 ## Requirements
 
@@ -44,14 +44,16 @@ npm run start to kick on the server
 
 if dockerized run:
 docker-compose up -d
-then this command seeds from inside ec2:
+then this command seeds Database from inside ec2:
+```
 docker exec -it agcfecmodulesjoxner_survey_1 npm run seed-dev
+```
 
 ### Installing Dependencies
 
 From within the root directory:
 
-```sh
+```
 npm install -g webpack
 npm install
 ```
