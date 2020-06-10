@@ -2,6 +2,9 @@
 
 > Project description: This project is meant to be a module located on the Shp Smart website under the item description page. The module represented here is a customer reviews module as well as a reviews average breakdown module they will both suppport multiple features.
 
+Demo video here:
+https://drive.google.com/file/d/1zVBrrOCG07ztsAkvgqtJi45iEPkh9rfu/view?usp=sharing
+
 ## Related Projects
 
   - https://github.com/hrden04/Shop-Smart1.0.0
