@@ -1,6 +1,6 @@
 # Amazon Graphics Card Project
 
-> Project description: This project is meant to be a module located on the Shp Smart website under the item description page. The module represented here is a customer reviews module as well as a reviews average breakdown module they will both suppport multiple features.
+> Project description: This project is meant to be a module located on the Shop Smart website under the item description page. The module represented here is a customer reviews module as well as a reviews average breakdown module they will both suppport multiple features.
 
 
 ## Related Projects
